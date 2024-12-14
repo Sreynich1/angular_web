@@ -1,0 +1,19 @@
+.input-group {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+input.form-control {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+button.btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.back{
+padding:8px 20px;
+margin-bottom: 300px;
+border-radius: 5px;border: 2px solid rgb(35, 120, 190);
+}

@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5"><br>
+      <div class="container mt-4" *ngIf="images && images.length">
+        <div class="main-image text-center">
+          <img
+            [src]="selectedImage"
+            alt="Main"
+            class="img-fluid mb-3"
+            style="max-height: 400px;"
+          />
+        </div>
+        <div class="row">
+          <div
+            class="col-3"
+            *ngFor="let img of images"
+            (click)="selectImage(img)"
+            style="cursor: pointer;"
+          >
+            <img
+              [src]="img"
+              alt="Thumbnail"
+              class="img-thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-sm-7">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Active Wear</h5>
+          <p class="card-text">$25.00</p>
+          <div class="star">
+            <i class="fa-duotone fa-solid fa-star texts pe-1"></i>
+            <i class="fa-duotone fa-solid fa-star texts pe-1"></i>
+            <i class="fa-duotone fa-solid fa-star texts pe-1"></i>
+            <i class="fa-duotone fa-solid fa-star start pe-1"></i>
+            <i class="fa-duotone fa-solid fa-star start pe-1"></i>
+            Rating 4.8 | 36 Comments<br>
+            <p>Brand: <span>Easy Wear</span></p>
+            <p>Description: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+            <p>Avaliable Color : White / Black</p>
+            <p>Specification: <br>Lorem ipsum dolor sit <br>
+              Amet, consectetur<br>
+              Adipiscing elit,set<br>
+              Duis aute irure<br>
+              Ut enim ad minim<br>
+              Dolore magna aliqua<br>
+              Excepteur sint<br>
+            </p>
+            <div class="row">
+              <div class="col-6">
+                Size :
+                <button class=" btn btn-success size">S</button>
+                <button class=" btn btn-success size">M</button>
+                <button class=" btn btn-success size">L</button>
+                <button class=" btn btn-success size">XL</button>
+              </div>
+            <div class="col-6">
+              <P class="pt-2">Quantity:</P>
+              <div class="d-flex align-items-center justify-content-center gap-2 " style="margin-top: -50px;">
+                <!-- Decrease Button -->
+                <button class="btn btn-success fw-bold" (click)="decrease()">-</button>
+                <!-- Value Display -->
+                <span class="border rounded py-2 bg-light fw-bold" style="min-width: 50px; text-align: center;">
+                  {{ value }}
+                </span>
+                <!-- Increase Button -->
+                <button class="btn btn-success fw-bold " (click)="increase()">+</button>
+              </div>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

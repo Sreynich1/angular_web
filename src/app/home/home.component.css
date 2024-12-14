@@ -1,3 +1,6 @@
+.body{
+  background-color:#efefef;
+}
 a {
   text-decoration: none;
   padding: 25px;
@@ -61,4 +64,5 @@ h4 {
 }
 .start{
   color:rgb(141, 138, 138);
+  font-weight: 50;
 }
